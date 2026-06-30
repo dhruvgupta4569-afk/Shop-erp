@@ -106,7 +106,7 @@ tr:hover td{background:#f8faff}
     <input type="password" id="loginPass" placeholder="Enter password" autocomplete="current-password"/>
   </div>
   <button class="btn primary" style="width:100%;font-size:15px;padding:11px" onclick="doLogin()">Sign in</button>
-  <p style="font-size:12px;color:#aaa;text-align:center;margin-top:1rem">Demo login: manager / shop123</p>
+  
 </div>
 </div>
 </div>
@@ -320,7 +320,7 @@ tr:hover td{background:#f8faff}
 </div>
 
 <script>
-const USERS={manager:{pass:'shop123',role:'Manager'},admin:{pass:'admin123',role:'Admin'}};
+const USERS={manager:{pass:'shop123',role:'Manager'},admin:{pass:'DhruvG908',role:'Admin'}};
 let S={sales:[],inventory:[],purchases:[],customers:[],staff:[],expenses:[],user:null};
 
 function load(){try{const d=localStorage.getItem('myshop_erp');if(d){const p=JSON.parse(d);['sales','inventory','purchases','customers','staff','expenses'].forEach(k=>{if(p[k])S[k]=p[k];});}}catch(e){}}
